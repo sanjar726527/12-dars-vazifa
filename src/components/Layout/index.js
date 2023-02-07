@@ -5,13 +5,23 @@ import { IoIosArrowDown } from "react-icons/io";
 import { CreateAccount } from "../CreateAccount";
 import { RxLayers } from "react-icons/rx";
 import { GrFormNext } from "react-icons/gr";
-import { BsThreeDots } from "react-icons/bs";
+import {
+  BsFacebook,
+  BsInstagram,
+  BsThreeDots,
+  BsTwitter,
+} from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { CgFileDocument } from "react-icons/cg";
-
+import logo from "../../assets/logo.png";
 import StyledButton from "../Button";
 import CourseDescription from "../CourseDescription";
 import MidNavbar from "../MidNavbar";
+import YourInstructor from "../YourInstructor";
+import { ProductCompany } from "../ProductCompany";
+import Testimonials from "../Testimonials";
+import AskedQuestions from "../AskedQuestions";
+import Join from "../Join";
 
 export const Layout = () => {
   return (
@@ -19,8 +29,8 @@ export const Layout = () => {
       <div className="layout">
         <header>
           <div className="nav">
-            <a className="navbar-brand" href="/">
-              <img src="" alt="" />
+            <a className="navbar-brand m-3" href="/">
+              <img src={logo} alt="" />
             </a>
             <div className="navbar">
               <div className="navbar-items">
@@ -445,7 +455,7 @@ export const Layout = () => {
                   />
                 </form>
                 <div className="navbar-buttons">
-                  <StyledButton>Sign up</StyledButton>
+                  <StyledButton variant="white">Sign up</StyledButton>
                   <StyledButton variant="great">Sign in</StyledButton>
                 </div>
               </div>
@@ -457,8 +467,158 @@ export const Layout = () => {
             <CreateAccount />
             <MidNavbar />
             <CourseDescription />
+            <YourInstructor />
+            <ProductCompany />
+            <Testimonials />
+            <AskedQuestions />
+            <Join />
           </div>
         </main>
+        <footer>
+          <div className="container">
+            <div className="footer-row">
+              <div className="footer-card">
+                <img
+                  src="https://geeks-react.netlify.app/static/media/logo.e22c846d87ff5a1252df471397badc6d.svg"
+                  alt=""
+                  class="logo-inverse"
+                />
+                <div class="mt-4">
+                  <p>
+                    Geek is feature-rich components and beautifully Bootstrap
+                    UIKit for developers, built with bootstrap responsive
+                    framework.
+                  </p>
+                  <div className="card-icons">
+                    <BsFacebook fill="#585572" />
+                    <BsTwitter fill="#585572" />
+                    <BsInstagram fill="#585572" />
+                  </div>
+                </div>
+              </div>
+              <div className="footer-card">
+                <h3 class="fw-bold mb-3">Company</h3>
+                <ul class="nav flex-column">
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      About
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      Pricing
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      Blog
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      Careers
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-card">
+                <h3 class="fw-bold mb-3">Support</h3>
+                <ul class="nav nav-footer flex-column nav-x-0 list-unstyled">
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      Help and Support
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      Become Instructor
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      Get the app
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      FAQ’s
+                    </a>
+                  </li>
+                  <li class=" ">
+                    <a class="nav-link" href="/marketing/landings/course-lead/">
+                      Tutorial
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer-card">
+                <h3 class="fw-bold mb-3">Get in touch</h3>
+                <p>339 McDermott Points Hettingerhaven, NV 15283</p>
+                <p class="mb-1">
+                  Email:{" "}
+                  <a href="/marketing/landings/course-lead/">
+                    support@geeksui.com
+                  </a>
+                </p>
+                <p>
+                  Phone:{" "}
+                  <span class="text-dark fw-semi-bold">(000) 123 456 789</span>
+                </p>
+                <div class="d-flex">
+                  <a href="/marketing/landings/course-lead/">
+                    <img
+                      src="	https://geeks-react.netlify.app/static/media/appstore.b464860c93223b3fc15fc7d026bcdca0.svg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                  <a class="ms-2" href="/marketing/landings/course-lead/">
+                    <img
+                      src="https://geeks-react.netlify.app/static/media/playstore.f23c3dcbde32e767203274d4b1749cc7.svg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="align-items-center g-0 border-top py-2 mt-6 row">
+              <div class="col-lg-4 col-md-5 col-sm-12">
+                <span>© 2023 Geeks-UI, Inc. All Rights Reserved</span>
+              </div>
+              <div class="d-md-flex justify-content-end col-lg-8 col-md-7 col-sm-12">
+                <nav class="nav nav-footer">
+                  <a
+                    class="nav-link ps-0"
+                    href="/marketing/landings/course-lead/"
+                  >
+                    Privacy Policy
+                  </a>
+                  <a
+                    class="nav-link px-2 px-md-3"
+                    href="/marketing/landings/course-lead/"
+                  >
+                    Cookie Notice{" "}
+                  </a>
+                  <a
+                    class="nav-link d-none d-lg-block"
+                    href="/marketing/landings/course-lead/"
+                  >
+                    Do Not Sell My Personal Information{" "}
+                  </a>
+                  <a class="nav-link" href="/marketing/landings/course-lead/">
+                    Terms of Use
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </LayoutWrapper>
   );

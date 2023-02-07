@@ -12,6 +12,8 @@ export const LayoutWrapper = styled.section`
       .nav {
         display: flex;
         flex-direction: row;
+        align-content: center;
+        justify-content: center;
         padding: 0 10px;
         .navbar {
           flex: 1;
@@ -67,6 +69,9 @@ export const LayoutWrapper = styled.section`
                   display: flex;
                   align-items: center;
                   justify-content: center;
+                  p {
+                    margin-top: 15px;
+                  }
                 }
               }
               .or-border {
@@ -219,6 +224,298 @@ export const LayoutWrapper = styled.section`
           }
         }
         .yourInstructor {
+          background: #ffffff;
+          padding: 8.5rem 0;
+          .container {
+            .yourInstructor-row {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              padding: 0 90px;
+              .yourInstructor-item {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                gap: 30px;
+                &:nth-child(2) {
+                  align-items: center;
+                }
+                span {
+                  font-size: 14px;
+                  font-weight: 600;
+                  letter-spacing: 2.8px;
+                  line-height: 22.4px;
+                  color: rgb(117, 79, 254);
+                }
+                h2 {
+                  font-size: 40px;
+                  font-weight: 700;
+                  letter-spacing: -0.8px;
+                  line-height: 52px;
+                  color: rgb(24, 17, 60);
+                  span {
+                    color: rgb(117, 79, 254);
+                    font-size: 40px;
+                  }
+                }
+                p {
+                  font-size: 20px;
+                  font-weight: 400;
+                  line-height: 32px;
+                  color: rgb(92, 87, 118);
+                }
+                .item-footer {
+                  width: 80%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  .footer-card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    h2 {
+                      font-size: 32px;
+                      font-weight: 700;
+                      letter-spacing: -2.56px;
+                      line-height: 44.2px;
+                    }
+                    p {
+                      font-size: 14px;
+                      font-weight: 400;
+                      line-height: 22.4px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .productCompany {
+          background: #ffffff;
+          padding: 8.5rem 0;
+          .productCompany-items {
+            .productCompany-title {
+              text-align: center;
+              margin-bottom: 40px;
+              span {
+                font-size: 14px;
+                letter-spacing: 2.8px;
+                line-height: 22.4px;
+                font-weight: 600;
+              }
+            }
+            .productCompany-item {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          }
+        }
+        .testimonials {
+          background: #f5f4f8;
+          padding: 8.5rem 0;
+          .testimonials-column {
+            .testimonials-title {
+              text-align: center;
+              margin-bottom: 4.5rem;
+              span {
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 2.8px;
+                line-height: 22.4px;
+                color: rgb(117, 79, 254);
+              }
+              h2 {
+                font-size: 40px;
+                font-weight: 700;
+                letter-spacing: -0.8px;
+                line-height: 52px;
+                color: rgb(24, 17, 60);
+              }
+              p {
+                color: rgb(92, 87, 118);
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: -0.48px;
+                line-height: 32px;
+              }
+            }
+            .testimonials-row {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 20px;
+              .testimonials-card {
+                background: #ffffff;
+                border-radius: 10px;
+                text-align: center;
+                p {
+                  padding: 3.5rem;
+                  font-size: 20px;
+                  font-weight: 400;
+                  color: rgb(24, 17, 60);
+                  letter-spacing: -0.48px;
+                  line-height: 32px;
+                }
+                .green-footer {
+                  background: #29baf9 !important;
+                }
+                .footer {
+                  position: relative;
+                  background: #754ffe;
+                  padding: 36px 24px 16px;
+                  text-align: center;
+                  border-radius: 0px 0px 10px 10px;
+                  img {
+                    width: 80px;
+                    height: 80px;
+                    position: absolute;
+                    border-radius: 50%;
+                    top: -40px;
+                    left: 42%;
+                  }
+                  h3 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    letter-spacing: -0.352px;
+                    line-height: 28px;
+                  }
+                  p {
+                    font-size: 14px;
+                    padding: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .askedQuestions {
+          background: #ffffff;
+          padding: 8.5rem 0;
+          .askedQuestions-title {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 72px;
+            span {
+              font-size: 14px;
+              font-weight: 600;
+              letter-spacing: 2.8px;
+              line-height: 22.4px;
+            }
+            h2 {
+              font-size: 40px;
+              font-weight: 700;
+              letter-spacing: -0.8px;
+              line-height: 48px;
+            }
+            p {
+              font-size: 20px;
+              font-weight: 500;
+              letter-spacing: -0.48px;
+              line-height: 32px;
+              color: rgb(100, 116, 139);
+            }
+          }
+          .askedQuestions-accordion {
+            width: 50%;
+            margin: 0 auto;
+            .accordion-button {
+              font-size: 18px;
+              font-weight: 700;
+              letter-spacing: normal;
+              line-height: 19.2px;
+            }
+            .accordion-body {
+              color: rgb(100, 116, 139);
+            }
+            .accordion-item {
+              border: 0;
+              border-bottom: 1px solid rgba(100, 116, 139, 0.2) !important;
+            }
+            .more {
+              margin-top: 72px;
+            }
+          }
+        }
+        .join {
+          background: #f1f5f9;
+          background-image: url("https://geeks-react.netlify.app/static/media/course-graphics.171832eb5421ed89e4654944532c6886.svg");
+          padding: 120px 0;
+          .join-column {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+            h2 {
+              font-size: 40px;
+              font-weight: 600;
+              letter-spacing: -0.8px;
+              line-height: 48px;
+              margin-bottom: 8px;
+            }
+            p {
+              width: 80%;
+              margin: 0 auto;
+              font-size: 20px;
+              font-weight: 500;
+              color: rgb(100, 116, 139);
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      background: #ffffff;
+      padding-top: 72px;
+
+      .footer-row {
+        display: flex;
+        .footer-card {
+          flex: 1;
+          text-align: start;
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgb(100, 116, 139);
+          }
+          li {
+            padding: 0;
+            width: max-content;
+            a {
+              font-size: 14px;
+              font-weight: 400;
+              padding: 2px 0;
+              color: rgb(100, 116, 139);
+              &:hover {
+                color: rgb(117, 79, 254);
+              }
+            }
+          }
+          .card-icons {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 5px;
+          }
+        }
+      }
+      .row {
+        margin-top: 40px;
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          color: rgb(71, 85, 105);
+        }
+        .nav {
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(71, 85, 105);
+            &:hover {
+              color: rgb(117, 79, 254);
+            }
+          }
         }
       }
     }

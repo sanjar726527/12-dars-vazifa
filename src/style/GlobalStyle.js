@@ -14,9 +14,7 @@ const GlobalStyle = createGlobalStyle`
     a{
      text-decoration:none;   
     }
-    p{
-        margin: 0;
-        padding: 0;
-    }
+    
+   
 `;
 export default GlobalStyle;

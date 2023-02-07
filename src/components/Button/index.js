@@ -28,9 +28,21 @@ const StyledButton = styled.button`
             background:#FFf;
           };
         `;
+      case "primary2":
+        return `
+        background:#6343d8;
+          font-size: 14px;
+          font-weight: 600;
+          color: #fff;
+          span{
+            background:#FFf;
+          };
+        `;
       case "white":
         return `
         background: #f0f0f0;
+        height:50px;
+        color: #000;
         span{
           background:#ffffff;
         }
@@ -51,11 +63,19 @@ const StyledButton = styled.button`
         return `
           background: #ffffff; 
           border: 1px solid rgba(0,0,0,0.1); 
+          height: 40px;
           &:hover{
           border: 1px solid rgba(0,0,0,0.2); 
           background: #f1f0f0; 
           } 
         `;
+      case "info":
+        return `
+            background-color: #31d2f2;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+          `;
     }
   }};
 `;
