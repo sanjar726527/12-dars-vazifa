@@ -12,6 +12,9 @@ export const Dropdown = styled.button`
   align-items: center;
   margin-bottom: -20px;
   padding-bottom: 20px;
+  p{
+    margin: 0;
+  }
   &:hover {
     .items {
       opacity: 1;
